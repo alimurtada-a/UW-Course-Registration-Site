@@ -1,8 +1,4 @@
 /**
- * Name: Tianmeng Wang and Ali
- * Date: Dec 2nd, 2021
- * Section: CSE 154 AF, TA: Austin Jenchi and Tara Wueger
- *
  * This is the app.js main entry on the backend for the course API. The course API provides user
  * with different data based upon the route. The possible endpoints funcionality are described in
  * the API documentation.

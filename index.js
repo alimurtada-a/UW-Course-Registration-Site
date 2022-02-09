@@ -1,8 +1,4 @@
 /**
- * Name: Tianmeng Wang and Ali
- * Date: Dec 2nd, 2021
- * Section: CSE 154 AF, TA: Austin Jenchi and Tara Wueger
- *
  * This is the javascript used in the index.html. This defines the general behaviour as the user
  * interacts with the registration page.
  */

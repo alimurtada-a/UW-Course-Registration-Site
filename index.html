@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+  Name: Tianmeng Wang and Alimurtada Al-Shimari
+  Date: Dec 2nd, 2021
+  Section: CSE 154 AF, TA: Austin Jenchi and Tara Wueger
+
+  This is the html for the Course registration webpage. It allows the user to
+  register for classes similarly to the the UW MyPlan site.
+-->
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=PT+Sans&family=Press+Start+2P&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
+  <title>Course registration</title>
+</head>
+
+<body>
+
+  <header class="hidden">
+    <div id="navbar">
+      <section>
+        <p id="left-side">Logged in as: </p>
+      </section>
+      <div>
+        <p> All Courses</p>
+        <p class="active"> Course Search</p>
+        <p> My Plan</p>
+        <p> My Registered Courses</p>
+      </div>
+      <p id="right-side"> Sign Out</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- login page -->
+    <section id="login-page">
+      <h1>UW COURSE REGISTRATION</h1>
+      <h2>Login:</h2>
+      <form id="login-form">
+        <div>
+          <label for="studentID">Student ID: </label>
+          <input required id="studentID" name="studentID" type="number">
+        </div>
+        <div>
+          <label for="password">Password: </label>
+          <input required id="password" name="password" type="password">
+        </div>
+        <button id="login-btn">
+          <h2>Login</h2>
+        </button>
+      </form>
+      </br>
+    </section>
+
+    <!-- search page -->
+    <section id="search-page" class="hidden">
+      <div>
+        <form>
+          <div id="search-bar">
+            <h2>Search for a course:</h2>
+            <label for="course-search"></label>
+            <input required name="course-search" type="text">
+            <button>Search</button>
+          </div>
+          <select>
+            <option>Search by major</option>
+          </select>
+          <input type="checkbox" name="major" value="no">
+          <label for="no">Non-major specific courses</label>
+        </form>
+      </div>
+      </br>
+      <hr>
+      <ul></ul>
+    </section>
+
+    <!-- all courses -->
+    <section id="all-courses" class="hidden">
+      <div>
+        <input type="radio" name="classes" value="no">
+        <label for="no">Grid view</label>
+        <input type="radio" name="classes" value="yes" checked="checked">
+        <label for="yes">List view</label>
+      </div>
+      <div class="hidden">
+        <ul id="grid"></ul>
+      </div>
+      <div>
+        <ul id="list"></ul>
+      </div>
+    </section>
+
+    <!-- my plan page -->
+    <section id="plan" class="hidden">
+      <h1>My Plan</h1>
+      <p>No courses have been added to plan yet.</p>
+      <div>
+        <ul></ul>
+        <button>Register All</button>
+        <button>Delete All</button>
+      </div>
+    </section>
+
+    <!-- my courses page -->
+    <section id="my-courses" class="hidden">
+      <h1>My Registered Courses</h1>
+      <p>No courses have been registered yet.</p>
+      <ul></ul>
+    </section>
+
+    <!-- course info page -->
+    <section id="course-info" class="hidden">
+      <h1></h1>
+      <div>
+        <button>Register</button>
+        <button>Add to plan</button>
+      </div>
+      <article></article>
+      <article id="confirm-tab">
+        <p></p>
+        <button>Yes</button>
+        <button>No</button>
+      </article>
+    </section>
+
+    <!-- result -->
+    <section id="result" class="hidden"></section>
+  </main>
+  <footer></footer>
+</body>
+
+</html>

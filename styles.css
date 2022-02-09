@@ -1,0 +1,294 @@
+/*
+  Name: Tianmeng Wang and Alimurtada Al-Shimari
+  Date: Dec 2nd, 2021
+  Section: CSE 154 AF, TA: Austin Jenchi and Tara Wueger
+
+  This is the css file used in index.html. It has a purple and gold theme with some simple
+  animations.
+
+  Background animation source: https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
+  Button animation source: https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+*/
+h1, h2, div, .confirm-tab p, #my-courses p, #plan p, #confirm-tab p, #all-courses label {
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1,
+h2,
+#search-page ul button,
+#my-courses ul button,
+#all-courses ul button,
+#plan button,
+#plan div ul li {
+  color: rgb(233, 198, 118);
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  text-shadow: 5px 5px 5px black;
+}
+
+#login-page > h2, #search-bar h2 {
+  text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
+  color: rgb(255, 237, 71);
+}
+
+#login-btn,
+#create-account-big-btn,
+#search-page ul,
+#all-courses ul,
+#search-page li button,
+#search-page div,
+#search-bar,
+#course-info button,
+#navbar,
+#my-courses ul,
+#my-courses li button,
+#course-info div,
+.success-msg,
+.failure-msg,
+#plan button,
+#plan div ul,
+#navbar div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#navbar {
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+  background-color: #333;
+  height: 70px;
+  justify-content: space-between;
+}
+
+#navbar div {
+  flex-direction: row;
+}
+
+#navbar p {
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#left-side {
+  color: white;
+  font-size: 17px;
+  padding-left: 10px;
+}
+
+#right-side {
+  margin-right: 10px;
+}
+
+#navbar div p:hover, #right-side:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar p.active {
+  background-color: rgb(66, 19, 141);
+  color: white;
+}
+
+#login-page div {
+  color: white;
+  padding: 20px;
+}
+
+#login-btn, #create-account-big-btn, #course-info button, #plan button {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  width: 300px;
+  margin: auto;
+  border: 5px outset white;
+  background-color: rgb(66, 19, 141);
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 25px;
+}
+
+body {
+  background: linear-gradient(-45deg, #6b1cb6, hsl(61, 100%, 62%), #8e37f1, #8831fa);
+  background-size: 700% 700%;
+  animation: gradient 15s ease infinite;
+  margin: 0px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  50% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+body > section > header h1 {
+  margin-bottom: 0px;
+}
+
+#studentID, #password, #new-password, #new-password-again, #select-dep {
+  width: 500px;
+  height: 250;
+  color: black;
+}
+
+#search-page ul, #my-courses ul, #plan div ul {
+  list-style: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+#all-courses ul {
+  list-style: none;
+  align-items: center;
+}
+
+#search-page ul button, #my-courses ul button, #all-courses ul button, #plan button, #plan div ul li {
+  font-size: 20px;
+  align-items: center;
+}
+
+#search-page li button, #my-courses li button, #all-courses li button, #plan div ul li {
+  flex-direction: column;
+  width: 700px;
+  border: 5px outset white;
+  background-color: rgb(66, 19, 141);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#search-page p, #search-page label, .gold-text, #all-courses label {
+  color: rgb(233, 198, 118);
+}
+
+#search-page div {
+  justify-content: center;
+  flex-direction: row;
+}
+
+#search-page > div > form > select {
+  margin-right: 15px;
+}
+
+#search-bar {
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+}
+
+#all-courses div {
+  padding-top: 20px;
+  justify-content: center;
+}
+
+hr {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+#search-page ul li button:hover, #all-courses ul li button:hover {
+  transform: scale(1.25) perspective(1px);
+}
+
+#course-info button, #plan button {
+  justify-content: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 45px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 10px;
+  color: gold;
+}
+
+#my-courses ul li p {
+  font-size: 15px;
+  margin-top: 0px;
+}
+
+table {
+  font-family: "Arial", "Helvetica", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(66, 19, 141);
+  color: white;
+}
+
+.confirm-tab p, #my-courses p, #plan p, #confirm-tab p {
+  font-size: 50px;
+}
+
+.success-msg, .failure-msg {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
+}
+
+.failure-msg {
+  color: rgb(211, 45, 45);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 50px;
+}
+
+.success-msg {
+  color: rgb(52, 206, 14);
+  font-family: 'Italianno', cursive;
+  font-size: 90px;
+  justify-content: center;
+}
+
+#grid li button{
+  width: auto;
+  flex-direction: row;
+}
+
+#list, #grid {
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
